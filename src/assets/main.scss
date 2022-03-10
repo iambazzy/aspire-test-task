@@ -1,0 +1,60 @@
+.bg {
+  height: 100vh;
+}
+
+.bg--dark {
+  background: #0C365A;
+}
+
+.font--xl {
+  font-size: 24px;
+}
+
+.font--xl--md {
+  font-size: 22px;
+}
+
+.font--lg {
+  font-size: 14px;
+}
+
+.font--md {
+  font-size: 12px;
+}
+
+.font--md--two {
+  font-size: 13px;
+}
+
+.font--sm {
+  font-size: 10px;
+}
+
+.font--white {
+  color: white;
+}
+
+.font--green {
+  color: #01D167;
+}
+
+.font--link {
+  color: #23CEFD
+}
+
+.pill-box {
+  height: 22px;
+  width: 40px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.z-1 {
+  z-index: 1;
+}
+
+.green-box {
+  background-color: #01D167;
+}
