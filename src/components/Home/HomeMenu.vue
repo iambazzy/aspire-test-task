@@ -34,7 +34,7 @@ export default {
     ExpansionContent
   },
   data: () => ({
-    panel: [0],
+    panel: 0,
     panels: [
       {
         name: 'Card details',
