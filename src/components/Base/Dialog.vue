@@ -10,7 +10,7 @@
       </v-card-title>
 
       <!-- BODY -->
-      <v-card-text class="px-4 py-2">
+      <v-card-text class="px-4 py-6">
         <slot></slot>
       </v-card-text>
     </v-card>

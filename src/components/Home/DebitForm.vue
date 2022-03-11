@@ -28,7 +28,10 @@
 </template>
 
 <script>
+import { generateRandomNumber } from '../../Helpers/index.js';
+
 export default {
+
   data: () => ({
     valid: false,
     formConfiguration: [
@@ -39,45 +42,20 @@ export default {
         value: '',
         rules: [v => !!v || 'Please enter your name']
       },
-      { 
-        id: 'lastDigits',
-        label: 'Card Number',
-        type: 'number',
-        value: '',
-        rules: [
-          v => !!v || 'Please enter your card number',
-          v => v.length === 16 || 'Invalid number - has to be 16 digit long'
-        ]
-      },
-      { 
-        id: 'thru',
-        label: 'Expiry',
-        type: 'number',
-        value: '',
-        hint: '1223 means 12/23',
-        rules: [
-          v => !!v || 'Please enter your expiry date',
-          v => v.length === 4 || 'Invalid expiry date'
-        ]
-      },
-      { 
-        id: 'cvv',
-        label: 'CVV',
-        type: 'password',
-        value: '',
-        rules: [
-          v => !!v || 'Please enter your cvv',
-          v => v.length === 3 || 'Invalid cvv - has to be 3 digit'
-        ]
-      },
     ]
   }),
   methods: {
+    prepareDataForSubmission() {
+      const data = {};
+      this.formConfiguration.forEach(el => data[el.id] = el.value);
+      data['lastDigits'] = generateRandomNumber(16);
+      data['thru'] = generateRandomNumber(4);
+      data['cvv'] = generateRandomNumber(3);
+      return data;
+    },
     submit() {
       if (this.$refs.add.validate()) {
-        const data = {};
-        this.formConfiguration.forEach(el => data[el.id] = el.value);
-        this.$emit('submitted-data', data);
+        this.$emit('submitted-data', this.prepareDataForSubmission());
       }
     }
   }
