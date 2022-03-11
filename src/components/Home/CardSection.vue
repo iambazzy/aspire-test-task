@@ -2,7 +2,7 @@
   <v-row>
     <v-col cols="12" class="py-2 d-flex justify-center">
       <v-card flat color="transparent" width="350px">
-        <v-window v-model="onboarding" reverse class="">
+        <v-window v-model="onboarding" reverse>
           <v-window-item v-for="(card, index) in cards" :key="index">
             <card :cardData="card" />
           </v-window-item>
