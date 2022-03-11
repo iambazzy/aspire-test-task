@@ -1,5 +1,5 @@
 <template>
-  <v-row class="mt-8 curved-top d-flex justify-space-around">
+  <v-row class="mt-4 curved-top d-flex justify-space-around">
     <v-col cols="2" class="px-1" v-for="(icon, index) in buttons" :key="index">
       <div class="d-flex flex-column align-center">
         <img :src="icon.img" height="25px" />

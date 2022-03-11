@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- TOP EYE VIEW -->
-    <div class="d-flex justify-end pr-7 z-1">
+    <div class="d-flex justify-end z-1">
       <div class="show-card px-4 d-flex justify-space-between" @click="showLastFour = !showLastFour">
         <v-icon class="eye-icon" small color="#01D167">mdi-eye</v-icon>
         <span class="font--md font--green font-weight-medium mt-1">Show card number</span>
@@ -9,7 +9,7 @@
     </div>
 
     <!-- MAIN CARD BODY -->
-    <v-card color="#01D167" class="card-structure rounded-lg mr-7">
+    <v-card color="#01D167" class="card-structure rounded-lg">
       <v-card-title class="d-flex justify-end">
         <img src="../../assets/name_logo.png" height="21px" />
       </v-card-title>
