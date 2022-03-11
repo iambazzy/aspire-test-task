@@ -56,6 +56,7 @@ export default {
     submit() {
       if (this.$refs.add.validate()) {
         this.$emit('submitted-data', this.prepareDataForSubmission());
+        this.$refs.add.reset();
       }
     }
   }
