@@ -51,6 +51,7 @@ export default {
       data['lastDigits'] = generateRandomNumber(16);
       data['thru'] = generateRandomNumber(4);
       data['cvv'] = generateRandomNumber(3);
+      data['disabled'] = false;
       return data;
     },
     submit() {

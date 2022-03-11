@@ -2,14 +2,14 @@
   <div>
     <!-- TOP EYE VIEW -->
     <div class="d-flex justify-end z-1">
-      <div class="show-card px-4 d-flex justify-space-between" @click="showLastFour = !showLastFour">
+      <div :class="['show-card px-4 d-flex justify-space-between', cardData.disabled ? 'disabled' : '']" @click="showLastFour = !showLastFour">
         <v-icon class="eye-icon" small>mdi-eye</v-icon>
         <span class="font--md font--green font-weight-medium mt-1">Show card number</span>
       </div>
     </div>
 
     <!-- MAIN CARD BODY -->
-    <v-card color="#01D167" class="card-structure rounded-lg">
+    <v-card :disabled="cardData.disabled" color="#01D167" class="card-structure rounded-lg">
       <v-card-title class="d-flex justify-end">
         <img src="../../assets/name_logo.png" height="21px" />
       </v-card-title>
@@ -55,7 +55,7 @@
 <script>
 export default {
   data: () => ({
-    showLastFour: true
+    showLastFour: true,
   }),
   props: {
     cardData: {
@@ -114,6 +114,11 @@ export default {
         margin-left: -4px;
       }
     } 
+  }
+
+  .disabled {
+    pointer-events: none;
+    cursor: not-allowed;
   }
   
   // Just in case we have a very small screen (maybe an iphone 5s)

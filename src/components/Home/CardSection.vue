@@ -40,7 +40,17 @@ export default {
     ])
   },
   watch: {
-    
+    onboarding: function(val) {
+      this.setSelectedCard(val);
+    }
+  },
+  methods: {
+    setSelectedCard(index = this.onboarding) {
+      this.$store.commit('setState', { key: 'selectedCard', value: this.cards[index] });
+    }
+  },
+  mounted() {
+    this.setSelectedCard();
   }
 }
 </script>
