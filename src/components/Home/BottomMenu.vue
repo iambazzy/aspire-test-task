@@ -10,16 +10,12 @@
 </template>
 
 <script>
+import { menuItems } from '../../Helpers/index';
+
 export default {
   data: () => ({
     value: false,
-    buttons: [
-      { name: 'Home', img: require('../../assets/logoo.png') },
-      { name: 'Cards', img: require('../../assets/pay.png')},
-      { name: 'Payments', img: require('../../assets/payments.png') },
-      { name: 'Credit', img: require('../../assets/credit.png') },
-      { name: 'Profile', img: require('../../assets/user.png') }
-    ]
+    buttons: [ ...menuItems ]
   })
 }
 </script>

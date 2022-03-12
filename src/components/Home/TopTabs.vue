@@ -1,7 +1,7 @@
 <template>
   <v-row>
     <v-col cols="12">
-      <v-tabs right v-model="tab" height="32px" background-color="transparent" dark>
+      <v-tabs v-model="tab" height="32px" background-color="transparent" :dark="$vuetify.breakpoint.smAndDown">
         <v-tabs-slider color="#23CEFD"></v-tabs-slider>
         <v-tab>My debit cards</v-tab>
         <v-tab>All company cards</v-tab>

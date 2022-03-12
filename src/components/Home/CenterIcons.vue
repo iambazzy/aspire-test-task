@@ -1,5 +1,5 @@
 <template>
-  <v-row class="mt-4 curved-top d-flex justify-space-around">
+  <v-row :class="['curved-top', $vuetify.breakpoint.smAndDown ? 'mt-4 d-flex justify-space-around' : 'curved-bottom justify-space-between' ]">
     <v-col cols="2" class="px-1" v-for="(icon, index) in buttons" :key="index">
       <div class="d-flex flex-column align-center" @click="handleClick(icon.id)">
         <img :src="icon.img" height="25px" />
@@ -49,6 +49,12 @@ export default {
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
     background: #EDF3FF;
+  }
+
+  .curved-bottom {
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    width: 380px;
   }
   .font-size-name {
     font-size: 11px;

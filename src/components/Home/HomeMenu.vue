@@ -1,10 +1,10 @@
 <template>
-  <v-row class="white" :style="{ height: [0, 1].includes(panel) ? '70vh' : '30vh' }">
+  <v-row class="white" :style="{ height: [0, 1].includes(panel) ? $vuetify.breakpoint.mdAndUp ? '60vh' : '70vh' : '30vh' }">
     <v-col cols="12">
-      <v-expansion-panels accordion v-model="panel">
+      <v-expansion-panels v-model="panel">
         <v-expansion-panel v-for="(item, i) in panels" :key="i">
           <!-- HEADER -->
-          <v-expansion-panel-header>
+          <v-expansion-panel-header color="#F5F9FF">
             <div class="d-flex align-center">
               <img :src="item.img" height="20px" />
               <div class="pl-2 font--md font-weight-medium" v-text="item.name" />
@@ -16,7 +16,7 @@
           <!-- HEADER -->
 
           <!-- CONTENT -->
-          <v-expansion-panel-content>
+          <v-expansion-panel-content color="mt-2">
             <expansion-content v-for="(item, index) in 3" :key="index" />
           </v-expansion-panel-content>
           <!-- CONTENT -->

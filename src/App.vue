@@ -5,7 +5,7 @@
       <div>
         <router-view/>
       </div>
-      <bottom-menu />
+      <bottom-menu v-if="$vuetify.breakpoint.smAndDown"/>
     </v-main>
   </v-app>
 </template>
