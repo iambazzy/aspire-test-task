@@ -32,3 +32,11 @@ npm run serve
 
 > [See the project](https://aspire-test-task.vercel.app/)
 
+# Screens
+
+![aspire-test-task vercel app_ (1)](https://user-images.githubusercontent.com/36547363/158013289-d6d2b656-1ea4-48e6-8f9b-c0fba48bbc63.png)
+
+![aspire-test-task vercel app_](https://user-images.githubusercontent.com/36547363/158013302-ad3d54b5-7252-4014-96cd-30f451dabd02.png)
+
+
+
