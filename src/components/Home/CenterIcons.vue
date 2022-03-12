@@ -1,7 +1,7 @@
 <template>
   <v-row :class="['curved-top', $vuetify.breakpoint.smAndDown ? 'mt-4 d-flex justify-space-around' : 'curved-bottom justify-space-between' ]">
     <v-col cols="2" class="px-1" v-for="(icon, index) in buttons" :key="index">
-      <div class="d-flex flex-column align-center" @click="handleClick(icon.id)">
+      <div class="d-flex flex-column align-center cursor-pointer" @click="handleClick(icon.id)">
         <img :src="icon.img" height="25px" />
         <div class="black--text mt-1 font-size-name text-center" v-if="selectedCard">
           {{ icon.id === 'freeze' && selectedCard.disabled ? icon.secondary : icon.name }}
