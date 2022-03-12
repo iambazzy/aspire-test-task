@@ -1,7 +1,7 @@
 <template>
   <v-form ref="add" lazy-validation v-model="valid">
     <v-row>
-      <v-col cols="12" md="6" class="py-0" v-for="(item, index) in formConfiguration" :key="index">
+      <v-col cols="12" md="12" class="py-0" v-for="(item, index) in formConfiguration" :key="index">
         <v-text-field  
           v-model="item.value"
           outlined

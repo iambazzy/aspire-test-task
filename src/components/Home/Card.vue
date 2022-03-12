@@ -3,8 +3,8 @@
     <!-- TOP EYE VIEW -->
     <div class="d-flex justify-end z-1">
       <div :class="['show-card px-4 d-flex justify-space-between', cardData.disabled ? 'disabled' : '']" @click="showLastFour = !showLastFour">
-        <v-icon class="eye-icon" small>mdi-eye</v-icon>
-        <span class="font--md font--green font-weight-medium mt-1">Show card number</span>
+        <v-icon class="eye-icon pt-md-1" small>mdi-eye</v-icon>
+        <span class="font--md font--green font-weight-medium mt-1 cursor-pointer">Show card number</span>
       </div>
     </div>
 
@@ -129,4 +129,5 @@ export default {
       }
     }
   }
+
 </style>

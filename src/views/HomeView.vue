@@ -1,13 +1,10 @@
 <template>
-  <v-container :class="[$vuetify.breakpoint.mdAndUp ? 'pa-16' : '']">
+  <v-container :class="[$vuetify.breakpoint.mdAndUp ? 'pa-12' : '']">
     <top-bar @add-card="handleModal(true)" />
     <top-tabs />
     
     <template v-if="$vuetify.breakpoint.smAndDown">
       <card-section />
-      <app-modal modalTitle="Add Card" @close-modal="handleModal(false)">
-        <debit-form @submitted-data="addCard" class="py-4" />
-      </app-modal>
       <center-icons @delete-card="deleteCard" @handle-freeze="handleFreeze" />
       <home-menu />
     </template>
@@ -15,6 +12,10 @@
     <template v-else>
       <web-layout />
     </template>
+
+    <app-modal modalTitle="Add Card" @close-modal="handleModal(false)">
+      <debit-form @submitted-data="addCard" class="py-4" />
+    </app-modal>
   </v-container>
 </template>
 

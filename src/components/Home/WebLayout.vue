@@ -2,12 +2,12 @@
   <v-card elevation="3" class="my-4 rounded-lg">
     <v-card-text>
       <v-row class="my-3">
-        <v-col cols="6" class="pt-4">
-          <v-row>
-            <v-col cols="12">
+        <v-col cols="6" class="pt-4 px-0">
+          <v-row class="px-0">
+            <v-col cols="12" class="px-0">
               <card-section />
             </v-col>
-            <v-col cols="12" class="d-flex justify-center">
+            <v-col cols="12" class="d-flex justify-center px-0">
               <div>
                 <center-icons @delete-card="deleteCard" @handle-freeze="handleFreeze" />
               </div>

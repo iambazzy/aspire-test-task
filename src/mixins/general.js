@@ -9,6 +9,7 @@ export default {
   },
   methods: {
     handleModal(value) {
+      console.log(value)
       this.$store.commit('setState', { key: 'modalVisible', value });
     },
     addCard(data) {

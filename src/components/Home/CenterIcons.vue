@@ -54,9 +54,10 @@ export default {
   .curved-bottom {
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
-    width: 380px;
+    width: 370px;
   }
   .font-size-name {
     font-size: 11px;
+    line-height: 14px;
   }
 </style>

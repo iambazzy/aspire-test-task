@@ -1,5 +1,5 @@
 <template>
-  <v-dialog :transition="`dialog-${transition}-transition`" v-model="modalVisible" persistent>
+  <v-dialog width="400px" :transition="`dialog-${transition}-transition`" v-model="modalVisible" persistent>
     <v-card>
       <!-- TITLE -->
       <v-card-title class="green-box font--white align-center d-flex justify-space-between pa-1">
