@@ -3,6 +3,17 @@
 > Task was to convert the XD designs into a working prototype taking **mobile first approach**. 
 > Link to XD [Go to adobe xd](https://xd.adobe.com/view/80c753f2-db2f-4dfc-b6c2-ce39a4c787f0-d594/specs/)
 
+# Converted Screens
+
+> Desktop
+
+![aspire-test-task vercel app_ (1)](https://user-images.githubusercontent.com/36547363/158013289-d6d2b656-1ea4-48e6-8f9b-c0fba48bbc63.png)
+
+
+> Mobile
+
+![aspire-test-task vercel app_](https://user-images.githubusercontent.com/36547363/158013302-ad3d54b5-7252-4014-96cd-30f451dabd02.png)
+
 # Technologies used
 
 > Vue
@@ -31,12 +42,6 @@ npm run serve
 # Hosted on [vercel](https://www.vercel.com)
 
 > [See the project](https://aspire-test-task.vercel.app/)
-
-# Screens
-
-![aspire-test-task vercel app_ (1)](https://user-images.githubusercontent.com/36547363/158013289-d6d2b656-1ea4-48e6-8f9b-c0fba48bbc63.png)
-
-![aspire-test-task vercel app_](https://user-images.githubusercontent.com/36547363/158013302-ad3d54b5-7252-4014-96cd-30f451dabd02.png)
 
 
 
